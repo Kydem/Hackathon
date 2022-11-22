@@ -28,7 +28,7 @@ trip.addEventListener("click", () => {
     let i = Math.ceil(Math.random() * 10)
 
     if (i <= 4) {
-        //Flies you to to a new location, and adds a mark where a hotel is
+        //Flys you to to a new location, and adds a mark where a hotel is
         map.flyTo(new L.LatLng(options.anchorage[0], options.anchorage[1]), 12, {duration: 2});
         mark = L.marker([61.217381, -149.863129]).addTo(map)
     } else if (i > 4 && i <= 8) {
